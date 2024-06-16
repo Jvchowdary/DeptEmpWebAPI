@@ -49,7 +49,6 @@ namespace DeptWebAPI.Repository
             await _context.SaveChangesAsync();
             return department;
         }
-
         public async Task<Department> UpdateDepartment(Department department)
         {
             _context.Departments.Add(department);
